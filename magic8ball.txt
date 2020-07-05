@@ -1,0 +1,13 @@
+OBJECT magic-8-ball
+PROPERTY random-answer
+
+PROPERTY listOfAnswers=["When you're ready", "Next year", "Three months", "Indubitably", "Tomorrow", "If you believe", "Aim for the stars", "Probably not", "You can do it", "You are amazing", "Don't think so", "Yes", "No"]
+
+FUNCTION ask-question
+	INPUT question, 8-ball shakes, 8-ball picks random answer from list-of-answers
+	OUTPUT answer
+	STOP 
+	
+	RUN FUNCTION ask-question WITH INPUT "What time is it?"
+	
+	PROPERTY listOfAnswers=["When you're ready", "Next year", "Three months", "Indubitably", "Tomorrow", "If you believe", "Aim for the stars", "Probably not", "You can do it", "You are amazing", "Don't think so", "Yes", "No"]
